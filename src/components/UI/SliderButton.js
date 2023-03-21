@@ -4,8 +4,8 @@ const SliderButton = ({onHandlePrev, onHandleNext, className}) => {
 
   return (
     <div className={`slider--btn--container ${className}`}>
-      <button type="button" onClick={onHandlePrev}><HiChevronLeft/><span className="hidden">previous</span></button>
-      <button type="button" onClick={onHandleNext}><HiChevronRight/><span  className="hidden">next</span></button>
+      <div className="slide-btn" onClick={onHandlePrev}><HiChevronLeft/></div>
+      <div className="slide-btn" onClick={onHandleNext}><HiChevronRight/></div>
     </div>
   );
 };

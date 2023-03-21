@@ -43,7 +43,7 @@
   flex-flow: row nowrap;
 }
 
-.slider--btn--container button {
+.slider--btn--container .slide-btn {
   cursor: pointer;
   padding: 13px 10px 10px 10px;
   background-color: hsl(0, 0%, 0%);
@@ -52,7 +52,7 @@
   border: none;
   font-size: 20px;
 }
-.slider--btn--container button:active {
+.slider--btn--container .slide-btn:active {
   background-color: hsl(0, 0%, 27%);
   color: hsl(0, 0%, 100%);
 }
@@ -62,13 +62,14 @@
 }
 
 @media (min-width: 766px) {
-  .slider--btn--container button {
+  .slider--btn--container .slide-btn {
+    padding: 13px 10px 10px 20px;
     width: 50px;
     font-size: 20px;
   }
 }
 @media (min-width: 1195px) {
-  .slider--btn--container button {
+  .slider--btn--container .slide-btn {
     width: 75px;
     font-size: 30px;
   }
