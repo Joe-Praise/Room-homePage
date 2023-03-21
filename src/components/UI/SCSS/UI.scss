@@ -68,7 +68,9 @@ $font_weight_1: 700;
     color: $White;
   }
 }
-
+.hidden{
+  display: none;
+}
 @media (min-width: 766px){
   .slider--btn--container button {
     width: 50px;

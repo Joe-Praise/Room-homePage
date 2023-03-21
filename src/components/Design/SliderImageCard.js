@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import ShopNowButton from "../UI/ShopNowButton";
 import SliderButton from "../UI/SliderButton";
 import Card from "../UI/Card";

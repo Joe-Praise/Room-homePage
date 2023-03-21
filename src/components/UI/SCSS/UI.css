@@ -57,6 +57,10 @@
   color: hsl(0, 0%, 100%);
 }
 
+.hidden {
+  display: none;
+}
+
 @media (min-width: 766px) {
   .slider--btn--container button {
     width: 50px;

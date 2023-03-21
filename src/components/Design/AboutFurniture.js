@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Content from './Content'
 import ContentImage from './ContentImage'
 import furniture1 from "../../images/image-about-dark.jpg";
