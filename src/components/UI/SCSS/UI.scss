@@ -1,0 +1,131 @@
+$Dark_Gray: hsl(0, 0%, 63%);
+$Black: hsl(0, 0%, 0%);
+$White: hsl(0, 0%, 100%);
+$Very_Dark_Gray: hsl(0, 0%, 27%);
+$fontSize: 12px;
+$font_weight_1: 500;
+$font_weight_2: 600;
+$font_weight_1: 700;
+
+// Card Style
+.card {
+  background-color: $White;
+  // padding: 25px 25px;
+  color: $Black;
+}
+
+// Shop now button style
+.shopNow {
+  border: none;
+  background-color: transparent;
+  letter-spacing: 6px;
+  font-size: 16px;
+  font-weight: $font_weight_1;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.shop--arrow{
+  display: inline-flex;
+  justify-content: center;
+  width: 40px;
+  height: 0px;
+  border: 2px solid;
+  position: relative;
+  margin-left: 15px;
+
+  &::before{
+    content: "";
+    position: absolute;
+    right: 1px;
+    top: -5px;
+    width: 10px;
+    box-shadow: -2px 2px 0 black;
+    height: 10px;
+    transform: rotate(-135deg);
+  }
+}
+
+.slider--btn--container {
+  display: flex;
+  width: max-content;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.slider--btn--container button {
+  cursor: pointer;
+  padding: 13px 10px 10px 10px;
+  background-color: $Black;
+  width: 50px;
+  color: $Dark_Gray;
+  border: none;
+  font-size: 20px;
+  &:active{
+    background-color: $Very_Dark_Gray;
+    color: $White;
+  }
+}
+
+@media (min-width: 766px){
+  .slider--btn--container button {
+    width: 50px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1195px){
+  .slider--btn--container button {
+    width: 75px;
+    font-size: 30px;
+  }
+}
+
+// Hamburger style
+// .label-check {
+//   display: none;
+// }
+
+// .hamburger-label {
+//   width: 30px;
+//   height: 30px;
+//   display: block;
+//   cursor: pointer;
+//   background-color: black;
+// }
+
+// .hamburger-label div {
+//   width: 30px;
+//   height: 4px;
+//   background-color: #fff;
+//   position: absolute;
+// }
+
+// .line1 {
+//   transition: all 0.3s;
+// }
+
+// .line2 {
+//   margin: 10px 0 0 0;
+//   transition: 0.3s;
+// }
+
+// .line3 {
+//   margin: 22px 0 0 0;
+//   transition: 0.3s;
+// }
+
+// #label-check:checked + .hamburger-label .line1 {
+//   transform: rotate(51deg) scaleX(0.7) translate(40px, -7.9px);
+//   border-radius: 50px 50px 50px 0;
+// }
+
+// #label-check:checked + .hamburger-label .line3 {
+//   transform: rotate(-54deg) scaleX(0.75) translate(40px, 7.5px);
+//   border-radius: 0 50px 50px 50px;
+// }
+
+// #label-check:checked + .hamburger-label .line2 {
+//   display: none;
+// }

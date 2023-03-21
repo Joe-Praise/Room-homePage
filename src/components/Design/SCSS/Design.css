@@ -1,0 +1,324 @@
+*, *::before, *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "League Spartan", sans-serif;
+  height: 100dvh;
+}
+
+header {
+  background-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 50;
+  width: 100%;
+}
+
+.desktop-header {
+  display: none;
+}
+
+.hamburger {
+  font-size: 30px;
+}
+
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 10;
+  background: rgba(66, 66, 66, 0.5);
+}
+
+.mobile-header {
+  margin: 10px 0 0 25px;
+  color: hsl(0, 0%, 100%);
+  display: flex;
+}
+.mobile-header h1 {
+  position: absolute;
+  left: 40%;
+  font-weight: 600;
+}
+
+.mobile-header--links--container {
+  background-color: white;
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  height: 90px;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  z-index: 200;
+}
+
+.clear {
+  fill: hsl(0, 0%, 63%);
+  font-size: 22px;
+}
+
+.mobile-header--links {
+  list-style-type: none;
+  display: inline-flex;
+  gap: 13%;
+  margin-left: 50px;
+  color: black;
+}
+
+.slider-img--container {
+  width: 100%;
+  margin: 0;
+  position: relative;
+}
+.slider-img--container figure {
+  width: 100%;
+  height: 320px;
+  margin: 0;
+}
+.slider-img--container figure img {
+  width: 100%;
+  height: 100%;
+  display: flow-root;
+}
+
+.slider-btn--position {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.slider-info--container .slider-info {
+  width: 80%;
+  margin: 0 auto;
+}
+.slider-info--container .slider-info h2 {
+  font-weight: 600;
+  margin: 25px 0 0 0;
+}
+.slider-info--container .slider-info p {
+  color: hsl(0, 0%, 63%);
+  line-height: 1.4;
+  margin: 15px 0;
+}
+.slider-info--container .slider-info .shop-btn--space {
+  line-height: 4;
+}
+
+.about-furniture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.content-image--figure {
+  flex-basis: 100%;
+}
+.content-image--figure img {
+  width: 100%;
+  height: 100%;
+}
+
+.body--content--card {
+  flex-basis: 100%;
+}
+.body--content--card .content {
+  width: 80%;
+  margin: 30px auto;
+}
+.body--content--card .content h3 {
+  margin: 0 0 18px 0;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 4px;
+}
+.body--content--card .content p {
+  line-height: 1.9;
+  margin-bottom: 30px;
+  color: hsl(0, 0%, 63%);
+}
+
+.links {
+  text-decoration: none;
+}
+
+@media (min-width: 766px) {
+  .mobile-header {
+    display: none;
+  }
+  .desktop-header {
+    color: hsl(0, 0%, 100%);
+    width: 43%;
+    margin-left: 55px;
+    display: inline-flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 4.5%;
+  }
+  .desktop-header h1 {
+    flex-basis: 10%;
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+  .desktop-header .desktop-list {
+    list-style-type: none;
+    padding: 0;
+    flex-basis: 80%;
+    display: inline-flex;
+    align-items: center;
+    font-weight: 700;
+    gap: 10%;
+    cursor: pointer;
+  }
+  .desktop-header .desktop-list li {
+    padding: 5px 0;
+    border: 2px solid transparent;
+    transition: 0.4s;
+  }
+  .desktop-header .desktop-list li:hover {
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+  }
+  .slider-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .slider-img--container {
+    flex-basis: 50%;
+  }
+  .slider-img--container figure {
+    height: auto;
+    margin: 0;
+  }
+  .slider-btn--position {
+    right: 0;
+  }
+  .slider-info--container {
+    flex-basis: 50%;
+    margin: 0;
+  }
+  .slider-info--container .slider-info {
+    width: 85%;
+    margin: 0 auto;
+  }
+  .slider-info--container .slider-info h2 {
+    font-size: 1.7rem;
+    margin: 0;
+    margin-bottom: 0.6rem;
+  }
+  .slider-info--container .slider-info p {
+    line-height: 1.2;
+    margin: 0;
+    font-size: 14px;
+  }
+  .slider-info--container .slider-info .shop-btn--space {
+    line-height: 3;
+    margin: 0;
+  }
+  .content-image--figure {
+    flex-basis: 30%;
+    height: 230px;
+  }
+  .body--content--card {
+    flex-basis: 40%;
+    height: 230px;
+  }
+  .body--content--card .content {
+    width: 85%;
+    margin: 30px auto;
+  }
+  .body--content--card .content h3 {
+    padding-top: 20px;
+    line-height: 0;
+    margin-bottom: 18px;
+    text-transform: uppercase;
+    font-size: 16px;
+    letter-spacing: 4px;
+  }
+  .body--content--card .content p {
+    line-height: 1.2;
+    margin-bottom: 0;
+    font-size: 14px;
+  }
+}
+@media (min-width: 1195px) {
+  .slider-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+  }
+  .slider-img--container {
+    flex-basis: 60%;
+  }
+  .slider-img--container figure {
+    height: auto;
+    margin: 0;
+  }
+  .slider-btn--position {
+    right: -150px;
+  }
+  .slider-info--container {
+    flex-basis: 40%;
+    margin: 0;
+  }
+  .slider-info--container .slider-info {
+    width: 70%;
+    margin: 0 auto;
+  }
+  .slider-info--container .slider-info h2 {
+    font-size: 2.5rem;
+    margin: 0;
+    margin-bottom: 1.5rem;
+  }
+  .slider-info--container .slider-info p {
+    line-height: 1.4;
+    margin: 0;
+    font-size: 16px;
+  }
+  .slider-info--container .slider-info .shop-btn--space {
+    margin-top: 3%;
+  }
+  .content-image--figure {
+    flex-basis: 30%;
+    height: 240px;
+  }
+  .content-image--figure img {
+    width: 100%;
+    height: 100%;
+    display: flow-root;
+  }
+  .body--content--card {
+    flex-basis: 40%;
+    height: 240px;
+  }
+  .body--content--card .content {
+    width: 85%;
+    margin: 30px auto;
+  }
+  .body--content--card .content h3 {
+    padding-top: 28px;
+    line-height: 0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-size: 17px;
+    letter-spacing: 6px;
+  }
+  .body--content--card .content p {
+    font-size: 16px;
+    line-height: 1.45;
+  }
+}/*# sourceMappingURL=Design.css.map */

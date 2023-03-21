@@ -1,0 +1,71 @@
+.card {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(0, 0%, 0%);
+}
+
+.shopNow {
+  border: none;
+  background-color: transparent;
+  letter-spacing: 6px;
+  font-size: 16px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  cursor: pointer;
+}
+
+.shop--arrow {
+  display: inline-flex;
+  justify-content: center;
+  width: 40px;
+  height: 0px;
+  border: 2px solid;
+  position: relative;
+  margin-left: 15px;
+}
+.shop--arrow::before {
+  content: "";
+  position: absolute;
+  right: 1px;
+  top: -5px;
+  width: 10px;
+  box-shadow: -2px 2px 0 black;
+  height: 10px;
+  transform: rotate(-135deg);
+}
+
+.slider--btn--container {
+  display: flex;
+  width: -moz-max-content;
+  width: max-content;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.slider--btn--container button {
+  cursor: pointer;
+  padding: 13px 10px 10px 10px;
+  background-color: hsl(0, 0%, 0%);
+  width: 50px;
+  color: hsl(0, 0%, 63%);
+  border: none;
+  font-size: 20px;
+}
+.slider--btn--container button:active {
+  background-color: hsl(0, 0%, 27%);
+  color: hsl(0, 0%, 100%);
+}
+
+@media (min-width: 766px) {
+  .slider--btn--container button {
+    width: 50px;
+    font-size: 20px;
+  }
+}
+@media (min-width: 1195px) {
+  .slider--btn--container button {
+    width: 75px;
+    font-size: 30px;
+  }
+}/*# sourceMappingURL=UI.css.map */
