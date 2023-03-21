@@ -33,19 +33,15 @@ const SliderImageCard = () => {
   ]);
 
   const handleNextSlide = () => {
-    setTimeout(() => {
       const isLastSlide = show === sliderInfo.length - 1;
       const newIndex = isLastSlide ? 0 : show + 1;
       setShow(newIndex);
-    }, 500);
   };
 
   const handlePrevSlide = () => {
-    setTimeout(() => {
       const isFirstSlide = show === 0;
       const newIndex = isFirstSlide ? sliderInfo.length - 1 : show - 1;
       setShow(newIndex);
-    }, 500);
   };
   return (
     <React.Fragment>
