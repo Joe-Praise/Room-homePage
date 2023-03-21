@@ -5,11 +5,11 @@ import AboutFurniture from "./components/Design/AboutFurniture";
 import Header from "./components/Design/Header";
 function App() {
   return (
-    <section className="App">
+    <main className="App">
       <Header />
       <SliderImageCard />
       <AboutFurniture />
-    </section>
+    </main>
   );
 }
 

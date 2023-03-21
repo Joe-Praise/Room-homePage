@@ -12,7 +12,7 @@ const Header = () => {
   }
 
   return (
-    <header>
+    <nav>
       <div className="mobile-header">
         {isOpen && <DropdownLinks onConfirm={handleCloseMenu}/>}
         <GiHamburgerMenu className="hamburger" onClick={handleHamburger} />
@@ -28,7 +28,7 @@ const Header = () => {
           <li>contact</li>
         </ul>
       </div>
-    </header>
+    </nav>
   );
 };
 

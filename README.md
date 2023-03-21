@@ -2,7 +2,7 @@
 
 In the project directory, you can run:
 
-# Frontend Mentor - REST Countries API with color theme switcher solution
+# Frontend Mentor - Room homepage solution
 
 This is a solution to the [Room homepage challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/room-homepage-BtdBY_ENq). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
@@ -29,8 +29,8 @@ Navigate the slider using either their mouse/trackpad or keyboard
 
 ### Links
 
-- Solution URL: ()
-- Solution website: ()
+- Solution URL: (https://github.com/Joe-Praise/Room-homePage)
+- Solution website: (https://joeroompage.netlify.app/)
 
 ### Built with
 
